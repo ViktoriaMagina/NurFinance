@@ -1,0 +1,63 @@
+.container{
+  max-width: 1275px;
+  padding: 0 15px;
+  margin: 0 auto;
+}
+.container-large{
+  max-width: 1920px;
+  margin: 0 auto;
+}
+.container-big{
+  max-width: 1650px;
+  padding: 0 15px;
+  margin: 0 auto;
+
+}
+.range-slider{
+  height: 6px;
+  &.noUi-target {
+    border: none;
+    box-shadow: none;
+    background: #CFDBE8;
+    border-radius: 8px;
+  }
+  .noUi-connect {
+    background: #355DFB;
+
+  }
+  .noUi-handle {
+    cursor: pointer;
+    background-color: #0000DE;
+    height: 30px;
+    width: 30px;
+    top: -12px;
+    right: -15px;
+    border-radius: 50%;
+    box-shadow: none;
+    border: none;
+    &::before{
+      display: none;
+    }
+    &::after{
+      width: 6px;
+      height: 6px;
+      transform: translate(-50%, -50%);
+      top: 50%;
+      left: 50%;
+      border-radius: 50%;
+    }
+}
+}
+
+.title{
+  font-family: 'Ubuntu';
+  font-weight: 300;
+  font-size: 34px;
+  line-height: 110%;
+  @media (max-width: 600px) {
+
+    font-size: 28px;
+
+    color: #000000;
+  }
+}

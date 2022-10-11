@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="ru" class="page">
+
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <meta name="theme-color" content="#111111">
+    <title>Start</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Ubuntu:wght@300;400;500;700&display=swap" rel="stylesheet">
+<link
+  rel="stylesheet"
+  href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css"
+/>
+<link
+  rel="stylesheet"
+  href="https://cdn.jsdelivr.net/npm/@fancyapps/ui/dist/fancybox.css"
+/>
+    <link rel="stylesheet" href="css/main.css">
+  </head>
+
+
+<body class="page__body">
+  <div class="cursor">
+    <div class="cursor__main"></div>
+  </div>
+  <div class="site-container">
+    @include('partials/header.html')
+    <div class="wrapper">
+      <main class="main">
+        <div class="breadcrupmbs">
+          <div class="breadcrupmbs__inner">
+            <div class="breadcrupmbs__list">
+              <a href="#"></a>
+              <span></span>
+              <a href="#"></a>
+              <span></span>
+              <a class="active" href="#"></a>
+            </div>
+          </div>
+        </div>
+        <section class="online-application-form">
+          <div class="container">
+            <div class="online-application-form__inner">
+              <form method="post" id="online-application-form" name="online-application-form" class="online-application-form__content">
+                <h2 class="online-application-form__title">Онлайн-заявка вкладчика</h2>
+                <div class="online-application-form__wrapper">
+                  <div class="online-application-form__contacts online-application-form-contacts">
+                    <h3 class="online-application-form-contacts__title">Контактные данные</h3>
+                    <div class="online-application-form-contacts__wrapper">
+                      <div class="online-application-form-contacts__column">
+                        <label class="online-application-form-contacts__box">
+                          <span>Фамилия, Имя и Отчество</span>
+                          <input placeholder="Иванов Алексей Петрович" id="online-application-name" name="online-application-name" type="text" class="online-application-form-contacts__input">
+                        </label>
+                        <label class="online-application-form-contacts__box">
+                          <span>Электронная почта</span>
+                          <input placeholder="Name@mail.com" id="online-application-email" name="online-application-email" type="email" class="online-application-form-contacts__input">
+                        </label>
+                        <label class="online-application-form-contacts__box">
+                          <span>Гражданство</span>
+
+                        </label>
+                      </div>
+                      <div class="online-application-form-contacts__column">
+                        <label class="online-application-form-contacts__box">
+                          <span>Мобильный телефон</span>
+                          <input placeholder="+7" id="online-application-tel" name="online-application-tel" type="tel" class="online-application-form-contacts__input">
+                        </label>
+                        <label class="online-application-form-contacts__box">
+                          <span>Дата рождения</span>
+                          <input placeholder="26.01.1984" id="online-application" name="online-application" type="date" class="online-application-form-contacts__input">
+                        </label>
+                        <label class="online-application-form-contacts__box">
+                          <span>Город проживания</span>
+                          <input placeholder="Казань" id="online-application" name="online-application" type="text" class="online-application-form-contacts__input">
+                        </label>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="online-application-form__params online-application-form-params">
+                    <h3 class="online-application-form-params__title">Параметры вклада</h3>
+                    <div class="online-application-form-params__item">
+                      <div class="online-application-form-params__item-header">
+                        <p class="online-application-form-params__item-title">Срок инвестирования</p>
+                        <b class="online-application-form-params__item-count"></b>
+                      </div>
+                      <div class="online-application-form-params__item-line range-slider"></div>
+                    </div>
+                    <div class="online-application-form-params__item">
+                      <div class="online-application-form-params__item-header">
+                        <p class="online-application-form-params__item-title">Срок инвестирования</p>
+                        <b class="online-application-form-params__item-count"></b>
+                      </div>
+                      <div class="online-application-form-params__item-line range-slider"></div>
+                    </div>
+                    <div class="online-application-form-params__item">
+                      <div class="online-application-form-params__item-header">
+                        <p class="online-application-form-params__item-title">Срок инвестирования</p>
+                        <b class="online-application-form-params__item-count"></b>
+                      </div>
+                      <div class="online-application-form-params__item-line range-slider"></div>
+                    </div>
+                  </div>
+                </div>
+              </form>
+            </div>
+          </div>
+        </section>
+        <section class="useful-information">
+          <div class="container">
+            <div class="useful-information__inner">
+              <h2 class="useful-information__title title">Полезная информация</h2>
+              <div class="useful-information__content">
+                <div class="useful-information__column useful-information-column useful-information-column--1">
+                  <p class="useful-information-column__category">Ответы</p>
+                  <h3 class="useful-information-column__title">Часто задаваемые <br> вопросы</h3>
+                  <ul class="useful-information-column__list">
+                    <li class="useful-information-column__item">
+                      <a href="#" class="useful-information-column__link">Что такое инвестиции? <br> Зачем нужно инвестировать?</a>
+                    </li>
+                    <li class="useful-information-column__item">
+                      <a href="#" class="useful-information-column__link">Какие стратегии инвестирования существуют и какую лучше выбрать?</a>
+                    </li>
+                    <li class="useful-information-column__item">
+                      <a href="#" class="useful-information-column__link">Как защищены мои инвестиции? <br>  Что будет, если компания обанкротится?</a>
+                    </li>
+                  </ul>
+                </div>
+                <div class="useful-information__column useful-information-column useful-information-column--2">
+                  <p class="useful-information-column__category">Ответы</p>
+                  <h3 class="useful-information-column__title">Часто задаваемые <br> вопросы</h3>
+                  <ul class="useful-information-column__list">
+                    <li class="useful-information-column__item">
+                      <a href="#" class="useful-information-column__link">Что такое инвестиции? <br> Зачем нужно инвестировать?</a>
+                    </li>
+                    <li class="useful-information-column__item">
+                      <a href="#" class="useful-information-column__link">Какие стратегии инвестирования существуют и какую лучше выбрать?</a>
+                    </li>
+                    <li class="useful-information-column__item">
+                      <a href="#" class="useful-information-column__link">Как защищены мои инвестиции? <br>  Что будет, если компания обанкротится?</a>
+                    </li>
+                  </ul>
+                </div>
+                <div class="useful-information__column useful-information-column useful-information-column--3">
+                  <p class="useful-information-column__category">Ответы</p>
+                  <h3 class="useful-information-column__title">Часто задаваемые <br> вопросы</h3>
+                  <ul class="useful-information-column__list">
+                    <li class="useful-information-column__item">
+                      <a href="#" class="useful-information-column__link">Что такое инвестиции? <br> Зачем нужно инвестировать?</a>
+                    </li>
+                    <li class="useful-information-column__item">
+                      <a href="#" class="useful-information-column__link">Какие стратегии инвестирования существуют и какую лучше выбрать?</a>
+                    </li>
+                    <li class="useful-information-column__item">
+                      <a href="#" class="useful-information-column__link">Как защищены мои инвестиции? <br>  Что будет, если компания обанкротится?</a>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+        @include('partials/footer.html')
+      </main>
+    </div>
+
+
+  </div>
+  <script src="./js/libs/jquery-3.6.0.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/@fancyapps/ui@4.0/dist/fancybox.umd.js"></script>
+  <!-- <script src="./js/libs/jquery.magnific-popup.min.js"></script> -->
+  <script src="./js/libs/jquery.maskedinput.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.10.4/gsap.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
+  <script src="js/libs/nouislider.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/chart.js@3.9.1/dist/chart.min.js"></script>
+  <script src="js/online-application.js"></script>
+</body>
+
+</html>

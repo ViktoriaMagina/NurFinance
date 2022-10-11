@@ -1,0 +1,72 @@
+
+<div class="calculate-popup-big">
+  <div id="calculate-popup-big" class="calculate-popup-big__wrapper" style="display:none;max-width:1368px;">
+    <div class="calculate-popup-big__wrapper-inner">
+      <h2 class="calculate-popup-big__title title">Рассчитай свои накопления и доход</h2>
+      <form id="calculate-popup-big-index" name="calculate-popup-big-index" class="calculate-popup-big__inner">
+        <div class="calculate-popup-big__settings">
+          <div class="calculate-popup-big__amount calculate-popup-big__item">
+            <div class="calculate-popup-big__amount-header">
+              <p class="calculate-popup-big__amount-title">Сумма вклада</p>
+              <b class="calculate-popup-big__amount-count"></b>
+            </div>
+            <div class="calculate-popup-big__amount-line range-slider"></div>
+          </div>
+          <div class="calculate-popup-big__term calculate-popup-big__item">
+            <div class="calculate-popup-big__term-header">
+              <p class="calculate-popup-big__term-title">Срок инвестирования</p>
+              <b class="calculate-popup-big__term-count"></b>
+            </div>
+            <div class="calculate-popup-big__term-line range-slider"></div>
+          </div>
+          <div class="calculate-popup-big__order calculate-popup-big__item">
+            <p class="calculate-popup-big__order-title">Порядок выплаты дохода</p>
+            <div class="calculate-popup-big__order-box">
+              <label class="calculate-check-box calculate-popup-big__order-item">
+                <input checked id="calculate-popup-big-order-monthly" value="12.5%" name="calculate-popup-big-order" type="radio" class="calculate-check calculate-popup-big__order-input">
+                <span class="calculate-popup-big__order-fake"></span>
+                <p class="calculate-popup-big__order-text">Ежемесячно</p>
+              </label>
+              <label class="calculate-check-box calculate-popup-big__order-item">
+                <input id="calculate-popup-big-order-end" value="13.5%" name="calculate-popup-big-order" type="radio" class="calculate-check calculate-popup-big__order-input">
+                <span class="calculate-popup-big__order-fake"></span>
+                <p class="calculate-popup-big__order-text">В конце срока</p>
+              </label>
+            </div>
+          </div>
+          <div class="calculate-popup-big__refill calculate-popup-big__item">
+            <div class="calculate-popup-big__refill-header">
+              <p class="calculate-popup-big__refill-title">Пополнение вклада</p>
+              <b class="calculate-popup-big__refill-count"><b></b>/в месяц</b>
+            </div>
+            <div class="calculate-popup-big__refill-line range-slider"></div>
+          </div>
+        </div>
+        <div class="calculate-popup-big__chart">
+          <canvas id="calculate-popup-big-chart" width="390" height="374">
+            <p>График накопления и дохода</p>
+          </canvas>
+        </div>
+        <div class="calculate-popup-big__result">
+          <div class="calculate-popup-big__result-wrapper">
+            <div class="calculate-popup-big__result-item">
+              <b id="calculate-popup-big-result-perc">12,5%</b>
+              <span>Доходность</span>
+            </div>
+            <div class="calculate-popup-big__result-item">
+              <b id="calculate-popup-big-result-income">282 366 ₽</b>
+              <span>Сумма доходности</span>
+            </div>
+            <div class="calculate-popup-big__result-item">
+              <b id="calculate-popup-big-result-count">1 282 366 ₽</b>
+              <span>Итоговая сумма</span>
+            </div>
+          </div>
+          <a href="#" class="calculate-popup-big__result-link">
+            Инвестировать
+          </a>
+        </div>
+      </form>
+    </div>
+  </div>
+</div>

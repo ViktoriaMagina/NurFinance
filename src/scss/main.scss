@@ -1,0 +1,25 @@
+// базовые подключения
+// @import "./vendor/magnific-popup";
+@import "./vendor/normalize";
+@import "./vendor/nouislider.min.scss";
+@import "vars";
+// @import "mixins";
+// @import "fonts";
+@import "settings";
+
+// подключения компонентов страницы
+@import "./components/header";
+@import "./components/index-section";
+@import "./components/recommended-product";
+@import "./components/calculate-acc-com";
+@import "./components/your-opportunity";
+@import "./components/reviews";
+@import "./components/useful-information";
+@import "./components/footer";
+@import "./components/preloader";
+@import "./components/cursor";
+@import "./components/calculate-popup";
+@import "./components/calculate-popup-big";
+@import "./components/online-application-form";
+
+
