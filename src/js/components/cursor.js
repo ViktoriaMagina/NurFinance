@@ -34,7 +34,10 @@ if(result==='unknown'){
       cur.classList.add("active");
     });
   })
-
+}
+else{
+  const cursor = document.querySelector('.cursor')
+  cursor.style.display = "none";
 }
 
 
